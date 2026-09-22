@@ -23,8 +23,8 @@
              納品時はこの内側だけを切り出す。
              ・<html><head><body><link>タグ・JS禁止
              ・クラスはすべて tfcc- プレフィックス
-             ・テキストは現状オリエンPDF（9.14）からの転記。
-               ★納品前に必ずaiデータの原文と突き合わせること（文言改変厳禁のため）
+             ・テキストはaiデータ原文（LP_PC_1200_fix.pdf抽出＋高解像度目視）と照合済み（2026-09-22）。
+               残タスク：SP版aiとの差分確認（デザイン照合時にレイアウト差のみ確認すればOK）
              ================================================ -->
         <div class="tfcc-lp">
 
@@ -32,7 +32,7 @@
           <section class="p-tfcckv">
             <picture>
               <source srcset="assets/images/kv_pc.jpg" media="(min-width: 769px)">
-              <img src="assets/images/kv_sp.jpg" alt="全自動コーヒーマシン COFFEE CRUSH KRUPS by T-fal 日本上陸記念キャッシュバックキャンペーン 先着1,000名（※予定人数に達し次第終了） 応募期間［応募締切］2027年1月8日（金）23:59まで［対象製品購入期間］2026年11月9日（月）〜2027年1月8日（金）">
+              <img src="assets/images/kv_sp.jpg" alt="全自動コーヒーマシン COFFEE CRUSH KRUPS by T-fal 日本上陸記念キャッシュバックキャンペーン 先着1,000名様（※予定人数に達し次第終了） 応募期間［応募締切］2027年1月8日（金）23:59まで［対象製品購入期間］2026年11月9日（月）〜2027年1月8日（金）">
             </picture>
           </section>
 
@@ -66,11 +66,22 @@
           <section class="p-tfccprize">
             <div class="p-tfccprize__inner">
               <h2 class="p-tfccprize__ttl">賞品</h2>
-              <p class="p-tfccprize__lead">デジタルギフトQUOカードPay 3,000円分</p>
+              <p class="p-tfccprize__lead">デジタルギフトQUOカードPay3,000円分</p>
               <figure class="p-tfccprize__img">
                 <img src="assets/images/prize_quopay.png" alt="QUOカードPay クオ・カード ペイ">
               </figure>
-              <!-- ★QUOカードPay説明文はaiデータ原文から転記する（TODO） -->
+              <div class="p-tfccprize__body">
+                <p class="p-tfccprize__desc">『QUOカードPay』とは、スマートフォンで使えるデジタルギフトです。専用のアプリが不要で、メールなどで送られてきたURLを開くだけで簡単にご利用いただけます。</p>
+                <div class="p-tfccprize__notes">
+                  <p>●「QUOカードPay」には発行日より3年間の有効期限がございますのでご注意ください。</p>
+                  <p>●「QUOカードPay」は、スマートフォンの画面にバーコードを表示させて利用する前払式支払手段です。スマートフォン以外の携帯電話およびタブレットではご利用できません。</p>
+                  <p>●お送りしたバリューコードのURLを紛失された場合などに、バリューコードのURLを再発行することは出来ません。残高がゼロになるまで、ブックマークやメールの保存などバリューコードのURLにアクセス出来るようにしてください。</p>
+                  <p>●アプリにバリューコードを保存した場合は、バリューコードのURLは不要になります。</p>
+                  <p>●「QUOカードPay」は、カードタイプのQUOカードとは異なるサービスです。カードタイプのQUOカード加盟店ではご利用できない場合があるほか、カードタイプのQUOカードの残高を移行、チャージすることはできません。</p>
+                  <p>●本キャンペーンは株式会社グループセブ ジャパンにより実施されています。本キャンペーンについてのお問い合わせは株式会社クオカードではお受け出来ません。</p>
+                  <p>●「QUOカードPay」もしくは「クオ・カード ペイ」およびそれらのロゴは株式会社クオカードの登録商標です。</p>
+                </div>
+              </div>
               <div class="p-tfccprize__links">
                 <a class="p-tfccprize__link" href="https://www.quocard.com/individual/store/quopay/" target="_blank" rel="noopener">QUOカードPayの使えるお店はこちら</a>
                 <a class="p-tfccprize__link" href="https://www.quocard.com/individual/use/quopay/" target="_blank" rel="noopener">QUOカードPayの使い方はこちら</a>
@@ -78,7 +89,7 @@
             </div>
           </section>
 
-          <!-- 応募方法 ★文言はオリエンPDFからの転記。aiデータ原文と要照合 -->
+          <!-- 応募方法（文言はai原文と照合済み 9/22） -->
           <section class="p-tfcchowto">
             <div class="p-tfcchowto__inner">
               <h2 class="p-tfcchowto__ttl">応募方法</h2>
@@ -101,7 +112,7 @@
                 <span class="p-tfcchowto__em">①販売店名　②購入日時　③対象製品　④合計金額</span></p>
                 <p class="p-tfcchowto__note">
                   ※レシートや納品書の原本は、賞品を受け取るまで大切に保管してください。<br>
-                  必要事項が撮影できていない、画像が不鮮明で読み取れないなどがあった場合に再度提出いただく必要がございます。
+                  必要事項が撮影できていない、画像が不鮮明で読み取れないなどがあった場合に再度提出していただく必要がございます。
                 </p>
               </div>
 
@@ -137,18 +148,90 @@
             <a class="c-tfccbtn__link" href="https://coffeecrush-cbcp.jp/apply" target="_blank" rel="noopener">応募する</a>
           </p>
 
-          <!-- 応募規約（枠内スクロール想定・要確認） ★全文はaiデータ原文から転記する（TODO） -->
+          <!-- 応募規約（枠内スクロールかはデザイン照合時に確定）。全文ai原文転記・照合済み 9/22。
+               ⚠️ delivery@pay-email.quocard.jp はここでもリンクにしない（プレーンテキスト） -->
           <section class="c-tfccterms">
             <div class="p-tfcchowto__inner">
               <h2 class="p-tfcchowto__ttl">応募規約</h2>
               <div class="c-tfccterms__box">
-                <p>●株式会社グループセブ ジャパン（以下「当社」といいます）が主催する＜COFFEE CRUSH 日本上陸記念　キャッシュバックキャンペーン＞（以下「本キャンペーン」といいます）にご応募の方は、以下の本キャンペーンの応募規約（以下「本規約」といいます）をよくお読みいただき、ご同意の上ご応募ください。本キャンペーンにご応募された場合には、本規約にご同意いただいたものとみなします。</p>
-                <p>【TODO】以降の規約全文はaiデータの原文からコピーして流し込む（文言改変厳禁）</p>
+                <p class="c-tfccterms__item">●株式会社グループセブ ジャパン（以下「当社」といいます）が主催する＜COFFEE CRUSH 日本上陸記念　キャッシュバックキャンペーン＞（以下「本キャンペーン」といいます）にご応募の方は、以下の本キャンペーンの応募規約（以下「本規約」といいます）をよくお読みいただき、ご同意の上ご応募ください。本キャンペーンにご応募された場合には、本規約にご同意いただいたものとみなします。</p>
+                <p class="c-tfccterms__item">●全国の取扱い店舗（家電量販・専門店・百貨店（直EC販売含む）、オンラインショップ（楽天、ヤフー、Qoo10、他））で新品でご購入の製品が対象です。</p>
+                <p class="c-tfccterms__note">※ネットオークションなどの個人売買、譲渡品や中古品、海外サイトで購入した輸入品ならびに並行輸入品は、本キャンペーンへの応募の対象外となります。</p>
+                <p class="c-tfccterms__note">※ティファール直営店、ティファールオンラインストア、アマゾンでの購入は<strong>キャンペーンの対象外</strong>となります。</p>
+
+                <h3 class="c-tfccterms__subttl">［応募期間］</h3>
+                <p class="c-tfccterms__strong">2026年11月9日(月)〜2027年1月8日(金)23:59</p>
+                <p class="c-tfccterms__center-note">※本キャンペーンは先着順です。応募締切日前に上限に達した場合は締め切らせていただきます。予めご了承ください。</p>
+
+                <h3 class="c-tfccterms__subttl">［対象製品購入期間］</h3>
+                <p class="c-tfccterms__strong">2026年11月9日(月)〜2027年1月8日(金)</p>
+
+                <h3 class="c-tfccterms__subttl">［対象製品］</h3>
+                <p class="c-tfccterms__strong">COFFEE CRUSH コーヒークラッシュ <span class="c-tfccterms__model">SA4028J0</span><br>
+                COFFEE CRUSH EXPERIENCE コーヒークラッシュ エクスペリエンス <span class="c-tfccterms__model">SA403BJ0</span></p>
+
+                <h3 class="c-tfccterms__subttl">［賞品］</h3>
+                <p class="c-tfccterms__strong">QUOカードPay 3,000円分</p>
+
+                <h3 class="c-tfccterms__subttl">［応募方法］</h3>
+                <p>下記1〜4の手順に従ってご応募ください。</p>
+                <p class="c-tfccterms__step"><span class="c-tfccterms__num">1.</span>対象製品を購入し、レシートなどの購買証明を受け取る。</p>
+                <p class="c-tfccterms__step"><span class="c-tfccterms__num">2.</span>対象製品購入時に受け取ったレシート（オンラインストアの場合納品書など）を真上から撮影。<br>
+                その際、①販売店名　②購入日時　③対象製品　④合計金額が視認できる大きさで写るように撮影してください。</p>
+                <p class="c-tfccterms__step"><span class="c-tfccterms__num">3.</span>製品に貼られている「定格シール」を枠内全体が映るように撮影。その際「SA」から始まる番号が視認できる大きさで写るように撮影してください</p>
+                <p class="c-tfccterms__step"><span class="c-tfccterms__num">4.</span>応募画面を開き、必要事項を記入し、2.レシートと3.定格シールの画像をアップロードしてください。</p>
+                <p class="c-tfccterms__note">※請求書、クレジットカード控え、購入履歴のスクリーンショット、荷物の送付状ではご応募いただけません。</p>
+                <p class="c-tfccterms__note">※上記①〜④の記載があればオンライン領収書でも可能です。</p>
+
+                <h3 class="c-tfccterms__subttl">［免責事項］</h3>
+                <p class="c-tfccterms__item">●当社は、応募者が以下のような不当な行為を行ったと判断した場合、何ら通知することなく、当該応募者による当選又は応募を無効にすることができ、これについて一切の責任を負いません。また、応募者が以下のような不当行為を行った結果、当社に損害が生じた場合には、当該応募者は損害の一切を賠償する義務を負うものとします。</p>
+                <p class="c-tfccterms__sub">（1）法令違反、犯罪行為、公序良俗に反する行為を行った場合。</p>
+                <p class="c-tfccterms__sub">（2）他人の権利やプライバシーを侵害する行為を行った場合。</p>
+                <p class="c-tfccterms__sub">（3）架空のまたは第三者のメールアドレスを利用する行為を行った場合。</p>
+                <p class="c-tfccterms__sub">（4）本キャンペーンサイト（以下、「当サイト」といいます）・本キャンペーンのセキュリティやシステムを破壊する行為を行った場合。</p>
+                <p class="c-tfccterms__sub">（5）対象製品を転売する目的で応募を行った場合。</p>
+                <p class="c-tfccterms__sub">（6）第三者による購入時のレシートまたは領収書を使って応募を行った場合。</p>
+                <p class="c-tfccterms__sub">（7）その他、当社または当サイト・本キャンペーンに対して不当な行為を行っていると判断した場合。</p>
+                <p class="c-tfccterms__item">●当社は、本キャンペーンに関して取得した応募者の個人情報を、当社が定める「個人情報取扱について」（プライバシーポリシー）に従って取り扱ったにもかかわらず応募者に損害が発生した場合、発生した損害について、当社に故意または重大な過失がない限り一切の責任を負いません。</p>
+                <p class="c-tfccterms__item">●未成年者が本キャンペーンにご応募する場合、本キャンペーンへの参加の可否は、その親権者の責任において判断するものとし、当社は一切の責任を負いません。</p>
+                <p class="c-tfccterms__item">●当サイトの内容については細心の注意を払っておりますが、妥当性や正確性およびウィルス感染等の危険性がないことを保証するものではなく、当サイトを利用することで以下のような問題が生じた場合（下記を含みますが、これらに限られません）、発生した損害について、当社は一切の責任を負いません。</p>
+                <p class="c-tfccterms__sub">（1）当サイトの使用に関して、ソフトウェア、ハードウェア上の事故やトラブル等が生じた場合。</p>
+                <p class="c-tfccterms__sub">（2）当サイトの使用に関して、応募者と第三者の間におけるトラブル等が生じた場合。</p>
+                <p class="c-tfccterms__sub">（3）当サイトが、第三者による妨害や情報改変などによりサービスが中断もしくは遅延し、当サイトに欠陥が生じた場合。</p>
+                <p class="c-tfccterms__sub">（4）当サイトの推奨する環境以外から当サイトに接続した為に情報が完全に取得できない場合。</p>
+                <p class="c-tfccterms__sub">（5）当社に故意または、過失なくして当社が提供する情報が誤送信されるか、もしくは欠陥があった場合。</p>
+                <p class="c-tfccterms__item">●当社は、下記に掲げる事情等の発生により、本キャンペーンを事前に告知することなく中断・中止することがあります。また、中断・中止による損害について、当社は一切の責任を負いません。</p>
+                <p class="c-tfccterms__sub">（1）自然災害や停電などにより本キャンペーンが運営困難となった場合。</p>
+                <p class="c-tfccterms__sub">（2）戦争、動乱、暴動、事件などにより、本キャンペーンが運営困難となった場合。</p>
+                <p class="c-tfccterms__sub">（3）その他、当社が運営上または技術上、本キャンペーンを中止することが相応と判断した場合。</p>
+                <p class="c-tfccterms__note">※本キャンペーンへ応募することにより、応募者は以上の規約を承諾したものとします。</p>
+                <p class="c-tfccterms__note">※本規約は、2026年11月から適用いたします。</p>
+
+                <h3 class="c-tfccterms__subttl">［ご注意］</h3>
+                <p class="c-tfccterms__item">●本キャンペーンは、製品を実際に所有および利用されるために購入されたお客様限定のキャンペーンです。ご応募は、ご購入いただいたご本人様限りとさせていただきます。転売目的と思われる方のご応募が確認できた場合には、応募又は当選を無効とさせていただきます。</p>
+                <p class="c-tfccterms__item">●法人購入の場合、本キャンペーンへの応募の対象外となります。</p>
+                <p class="c-tfccterms__item">●ご応募は、お一人様1回限りとさせていただきます。</p>
+                <p class="c-tfccterms__item">●当選対象となるには、対象製品をご購入いただき、応募期間内のレシート、定格シールの画像をアップロードいただいた方に限ります。また、第三者による購入時のレシート又は領収書を使って応募を行った場合、当該応募又は当選は無効となります。</p>
+                <p class="c-tfccterms__item">●ネットオークションなどの個人売買、譲渡品や中古品、海外サイトで購入した輸入品ならびに並行輸入品は、本キャンペーンへの応募の対象外となります。</p>
+                <p class="c-tfccterms__item">●本キャンペーンは先着順となります。1,000名様に達した時点でキャンペーンは終了となるため、応募締切日前に終了する場合がございます。</p>
+                <p class="c-tfccterms__item">●レシートは、店舗名、購入日時、対象製品名がしっかりと分かるように撮影してください※レシートが長い場合は、該当部分以外を折りまげてください。</p>
+                <p class="c-tfccterms__item">●以下のようなレシート、定格シール画像でのご応募は無効となる場合がございます。・レシートが途中で切れている・レシートが汚れていて記載内容が確認できない・画像がピンボケまたはブレていて記載内容が確認できない。</p>
+                <p class="c-tfccterms__item">●クレジットカードの控え、請求書、購入履歴画面のスクリーンショット、荷物伝票ではご応募いただけません。</p>
+                <p class="c-tfccterms__item">●賞品をお受け取りいただくまで、ご応募いただきましたレシート等はお手元に保管してください。</p>
+                <p class="c-tfccterms__item">●賞品の送付は、お申込み時に記載いただいたメールアドレス宛にお送りいたします。QUOカードPayからのメール（delivery@pay-email.quocard.jp）を受信できるよう、設定をお願いいたします。</p>
+                <p class="c-tfccterms__item">●当選をご案内するメールが受信できない場合は、当該当選は無効となります。再送信はできかねますので予めご了承ください。</p>
+                <p class="c-tfccterms__item">●当選無効に関するお問い合わせにはお答えいたしかねます。</p>
+                <p class="c-tfccterms__item">●賞品の権利の譲渡、または賞品の販売、換金はできません。</p>
+                <p class="c-tfccterms__item">●本キャンペーン内容については告知なく変更となる場合があります。</p>
+                <p class="c-tfccterms__item">●製品写真および画像はイメージです。</p>
+                <p class="c-tfccterms__item">●記載されている会社名・製品名は各社の商標または登録商標です。</p>
+                <p class="c-tfccterms__item">●本キャンペーンの主催は株式会社グループセブ ジャパンです。ご応募いただいたお客様の情報は、当社が実施するキャンペーンの運営ならびに賞品の送付を目的として、当社委託先に提供させていただくことがございます。また、マーケティング目的としてお客様の情報（個人情報保護法上の「個人情報」に該当する情報を除く）を使用させていただく場合がございます。詳しくは当社の「個人情報取扱について」（プライバシーポリシー）をご覧ください。</p>
+                <p class="c-tfccterms__item">●本キャンペーンの関係者の応募はできません。</p>
               </div>
             </div>
           </section>
 
-          <!-- よくあるご質問（details/summary・初期たたむ・Vで開閉） ★文言はオリエンPDFからの転記。aiデータ原文と要照合 -->
+          <!-- よくあるご質問（details/summary・初期たたむ・Vで開閉・全10問）文言はai原文と照合済み 9/22 -->
           <section class="p-tfccfaq">
             <div class="p-tfccfaq__inner">
               <h2 class="p-tfccfaq__ttl">よくあるご質問</h2>
@@ -160,7 +243,7 @@
 
               <details class="p-tfccfaq__item">
                 <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>携帯（ガラケー）から応募したいのですが</summary>
-                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>画像形式はJPG形式、2MB以内のデータで再度ご応募ください。</p></div>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>画像形式はJPG形式、２MB以内のデータで再度ご応募ください。</p></div>
               </details>
 
               <details class="p-tfccfaq__item">
@@ -190,12 +273,12 @@
 
               <details class="p-tfccfaq__item">
                 <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>領収書（購買証明）で応募はできますか？</summary>
-                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>製品名、購入日、購入店が記載されている領収書や購買証明でしたら、ご応募いただけます。<br>製品名が確認できない領収書や購買証明では、ご応募いただいても無効となります。ご了承ください。</p></div>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>製品、購入日、購入店が記載されている領収書や購買証明でしたら、ご応募いただけます。<br>製品が確認できない領収書や購買証明では、ご応募いただいても無効となります。ご了承ください。</p></div>
               </details>
 
               <details class="p-tfccfaq__item">
                 <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>WEBで購入したのですが応募できますか？</summary>
-                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>製品名が記載されている購買証明でご応募いただけます。製品名、購入店舗名、購入日がわかるように撮影をお願いします。</p></div>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>製品が記載されている購買証明でご応募いただけます。製品、購入店舗名、購入日がわかるように撮影をお願いします。</p></div>
               </details>
 
               <details class="p-tfccfaq__item">
