@@ -229,13 +229,14 @@
 }
 .tfcc-lp .p-tfccproducts__link {
   display: block;
-  width: 93.115942029%;
+  padding-left: 1%;
   margin: 0 auto;
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccproducts__link {
     width: 1080px;
     max-width: 90%;
+    padding-left: 0;
   }
 }
 @media (hover: hover) and (pointer: fine) {
@@ -281,11 +282,23 @@
   text-align: center;
   font-size: 22px;
   font-weight: 700;
+  margin: 0 calc(50% - 50vw);
+  padding: 0 1%;
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccprize__lead {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 26px;
-    margin-bottom: 28px;
+    padding: 0;
+    margin: 0 0 28px;
   }
 }
 .tfcc-lp .p-tfccprize__lead span {
@@ -742,7 +755,7 @@
   font-weight: 700;
   letter-spacing: 0.35em;
   text-indent: 0.35em;
-  padding: 0 24px;
+  padding: 0 24px 14px;
   margin-bottom: 16px;
   border-bottom: 1px solid #5f3c13;
 }
