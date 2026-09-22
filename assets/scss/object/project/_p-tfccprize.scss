@@ -1,55 +1,162 @@
 @use '../../foundation/setting' as s;
 @use '../../foundation/mixin' as *;
 
-// 賞品（デジタルギフトQUOカードPay 3,000円分・スマホ画像・使えるお店/使い方ボタン）
-// ★レイアウト数値はaiから実測して確定
+// 賞品（QUOカードPay 3,000円分）
+// PC: 左=スマホモック画像 / 右=ロゴ+説明+注意書き+リンクボタン の2カラム
+// SP: 縦積み
+// ★数値は照合フェーズで微調整
 
 .tfcc-lp {
     .p-tfccprize {
         padding: 40px 0 0;
 
         &__inner {
-            max-width: calc(360 / 414 * 100%);
+            max-width: calc(385.5 / 414 * 100%);
             margin: 0 auto;
-            padding: 24px 20px;
+            padding: 28px 20px;
             background-color: s.$color-white;
-            border: 2px solid s.$color-brown;
+            border: 3px solid s.$color-brown;
+            border-radius: 12px 0 12px 12px;
 
             @include pc {
-                max-width: 880px;
+                max-width: 845px;
+                padding: 44px 48px;
             }
         }
 
         &__ttl {
             text-align: center;
-            font-size: 16px;
+            color: s.$color-red;
+            font-size: 19px;
             font-weight: 700;
-            letter-spacing: 0.3em;
-            margin-bottom: 16px;
+            letter-spacing: 0.35em;
+            text-indent: 0.35em; // letter-spacing分のセンターずれ補正
+            margin-bottom: 14px;
 
             @include pc {
-                font-size: 22px;
+                font-size: 24px;
+            }
+        }
+
+        &__lead {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+
+            @include pc {
+                font-size: 26px;
+                margin-bottom: 28px;
+            }
+
+            span {
+                font-size: 34px;
+                font-weight: 700;
+
+                @include pc {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        &__grid {
+            @include pc {
+                display: flex;
+                align-items: flex-start;
+                gap: 40px;
+            }
+        }
+
+        &__img {
+            width: 75%;
+            margin: 0 auto 20px;
+
+            @include pc {
+                flex: 0 0 276px;
+                width: 276px;
+                margin: 0;
+            }
+        }
+
+        &__body {
+            @include pc {
+                flex: 1;
+                min-width: 0;
+            }
+        }
+
+        &__logo {
+            display: none;
+            width: 170px;
+            margin: 0 auto 14px;
+            
+            @include pc {
+                display: block;
+                width: 228px;
+                margin: 0 auto 18px;
+            }
+        }
+
+        &__desc {
+            font-size: 14px;
+
+            @include pc {
+                font-size: 15px;
+            }
+        }
+
+        &__notes {
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: calc(17.72 / 12.05);
+
+            @include pc {
+                font-size: 12px;
+            }
+
+            p {
+                padding-left: 1em;
+                text-indent: -1em;
             }
         }
 
         &__links {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            margin-top: 16px;
+            gap: 12px;
+            margin-top: 20px;
             align-items: center;
+
+            @include pc {
+                margin-top: 24px;
+            }
         }
 
         &__link {
-            display: inline-block;
-            padding: 10px 24px;
-            border: 1px solid s.$color-text;
+            position: relative;
+            display: block;
+            width: 100%;
+            max-width: 312px;
+            padding: 8px 28px 8px 20px;
+            text-align: center;
             border-radius: 999px;
+            background-color: s.$color-quo-gray;
+            color: s.$color-quo-blue;
             font-size: 12px;
-            background-color: #f5f5f5; // ★仮置き
 
             @include pc {
-                font-size: 14px;
+                font-size: 13px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                width: 6px;
+                height: 6px;
+                border-top: 1.5px solid s.$color-quo-blue;
+                border-right: 1.5px solid s.$color-quo-blue;
+                transform: translateY(-50%) rotate(45deg);
             }
 
             @include hover {

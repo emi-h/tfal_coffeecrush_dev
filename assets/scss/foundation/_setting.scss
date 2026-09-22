@@ -15,12 +15,16 @@ $sp-s: 374px;
 $design-pc: 1200px; // LP_PC_1200_fix.ai
 $design-sp: 414px;  // LP_SP_414_fix.ai
 
-// Colors ★仮置き。aiデータからスポイトで実測して確定すること（推測近似のまま納品しない）
-$color-brown: #5a3a22;  // 見出し・枠線（コーヒーブラウン系）
-$color-red: #d7000f;    // 応募ボタン・アクセント
-$color-cream: #f5ecdd;  // 背景（クリーム系）
+// Colors（2026-09-22 デザインPDFの高解像度レンダからピクセル実測。
+// 納品前にemiがaiデータのスポイトで最終確認する）
+$color-brown: #5f3c13;   // 帯・カード枠線・規約見出し（実測 #5A341F/#59331F）
+$color-red: #dc1f26;     // 応募ボタン・見出し・アクセント（実測 #DC1F26/#DB1F25）
+$color-cream: #efe0cc;   // 全体背景（実測 #EFE0CC）
 $color-white: #fff;
-$color-text: #333;
+$color-text: #000;       // 本文（実測でほぼ純黒）
+$color-faq-bg: #f3efee;  // FAQ質問バー背景（実測 #F3EFEE）
+$color-quo-gray: #eeefef; // QUOリンクボタン背景（実測 #EBEAE8）
+$color-quo-blue: #008cd7; // QUOリンクボタン文字（実測 #208ACE ★ブランド色のためスポイト確認優先）
 
 // Typography
 // font-family はサイト継承の値を「明示指定」で担保する（継承任せ禁止）。

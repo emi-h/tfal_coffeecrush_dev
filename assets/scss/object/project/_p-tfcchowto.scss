@@ -1,36 +1,40 @@
 @use '../../foundation/setting' as s;
 @use '../../foundation/mixin' as *;
 
-// 応募方法（手順1〜4のテキストボックス）
-// ★レイアウト数値はaiから実測して確定
+// 応募方法（手順1〜4。手順2・3はPCで右側に図版）
+// デザイン上、手順間に罫線はなし（余白のみ）
+// ★数値は照合フェーズで微調整
 
 .tfcc-lp {
     .p-tfcchowto {
         padding: 40px 0 0;
 
         &__inner {
-            max-width: calc(360 / 414 * 100%);
+            max-width: calc(385.5 / 414 * 100%);
             margin: 0 auto;
-            padding: 24px 20px;
+            padding: 28px 20px;
             background-color: s.$color-white;
-            border: 2px solid s.$color-brown;
+            border: 3px solid s.$color-brown;
+            border-radius: 12px 0 12px 12px;
 
             @include pc {
-                max-width: 880px;
+                max-width: 845px;
+                padding: 44px 48px;
             }
         }
 
         &__ttl {
             text-align: center;
-            font-size: 16px;
+            color: s.$color-red;
+            font-size: 19px;
             font-weight: 700;
-            letter-spacing: 0.3em;
-            padding-bottom: 12px;
-            margin-bottom: 16px;
-            border-bottom: 1px solid s.$color-brown;
+            letter-spacing: 0.35em;
+            text-indent: 0.35em;
+            margin-bottom: 18px;
 
             @include pc {
-                font-size: 22px;
+                font-size: 24px;
+                margin-bottom: 24px;
             }
         }
 
@@ -43,23 +47,69 @@
         }
 
         &__step {
-            margin-top: 20px;
-            padding-top: 16px;
-            border-top: 1px solid s.$color-brown;
+            margin-top: 24px;
             font-size: 12px;
 
             @include pc {
                 font-size: 14px;
+                margin-top: 32px;
+            }
+
+            &--hasfig {
+                @include pc {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 32px;
+                }
+            }
+        }
+
+        &__step-body {
+            @include pc {
+                flex: 1;
+                min-width: 0;
             }
         }
 
         &__step-ttl {
             font-weight: 700;
+            font-size: 13px;
             margin-bottom: 8px;
+
+            @include pc {
+                font-size: 16px;
+            }
+        }
+
+        &__fig {
+            margin: 16px auto 0;
+            // 幅＝書き出し実寸÷2（2x書き出し確認済み 9/22）。最終はピクセル照合で微調整
+            max-width: 100%;
+
+            @include pc {
+                flex: 0 0 auto;
+                margin: 0;
+            }
+
+            &--receipt {
+                width: 185px; // SP 370/2
+
+                @include pc {
+                    width: 185px; // PC 369/2
+                }
+            }
+
+            &--seal {
+                width: 304px; // SP 608/2
+
+                @include pc {
+                    width: 325px; // PC 649/2
+                }
+            }
         }
 
         &__note {
-            font-size: 11px;
+            font-size: 12px;
             margin-top: 8px;
 
             @include pc {
@@ -67,9 +117,10 @@
             }
         }
 
-        // 注意書きの赤文字（撮影4項目など。デザイン照合時に対象を確定）
+        // 撮影4項目（①〜④）の赤文字
         &__em {
             color: s.$color-red;
+            font-weight: 700;
         }
     }
 }

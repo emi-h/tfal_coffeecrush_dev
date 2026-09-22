@@ -10,28 +10,31 @@
         padding: 40px 0 0;
 
         &__inner {
-            max-width: calc(360 / 414 * 100%);
+            max-width: calc(385.5 / 414 * 100%);
             margin: 0 auto;
-            padding: 24px 20px;
+            padding: 28px 20px;
             background-color: s.$color-white;
-            border: 2px solid s.$color-brown;
+            border: 3px solid s.$color-brown;
+            border-radius: 12px;
 
             @include pc {
-                max-width: 880px;
+                max-width: 845px;
+                padding: 44px 48px;
             }
         }
 
         &__ttl {
             text-align: center;
-            font-size: 16px;
+            color: s.$color-red;
+            font-size: 19px;
             font-weight: 700;
-            letter-spacing: 0.3em;
-            padding-bottom: 12px;
+            letter-spacing: 0.35em;
+            text-indent: 0.35em;
             margin-bottom: 16px;
-            border-bottom: 1px solid s.$color-brown;
 
             @include pc {
-                font-size: 22px;
+                font-size: 24px;
+                margin-bottom: 22px;
             }
         }
 
@@ -40,15 +43,17 @@
 
             @include pc {
                 font-size: 14px;
+                text-align: center;
             }
         }
 
         &__note {
-            font-size: 11px;
-            margin-top: 8px;
+            font-size: 12px;
+            margin-top: 10px;
 
             @include pc {
                 font-size: 12px;
+                text-align: center;
             }
         }
     }

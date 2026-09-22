@@ -2,20 +2,25 @@
 @use '../../foundation/mixin' as *;
 
 // お問合せ（KRUPS キャッシュバックキャンペーン事務局・mailtoリンク）
+// タイトルは黒＋下罫線（デザイン準拠）。リンクの見た目もデザイン通りプレーン
 
 .tfcc-lp {
     .p-tfccfooter {
-        padding: 40px 0 60px;
+        padding: 44px 20px 64px;
         text-align: center;
 
         &__ttl {
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 700;
-            letter-spacing: 0.3em;
-            margin-bottom: 12px;
+            letter-spacing: 0.35em;
+            text-indent: 0.35em;
+            padding: 0 24px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid s.$color-brown;
 
             @include pc {
-                font-size: 18px;
+                font-size: 20px;
+                padding: 0 120px 14px;
             }
         }
 
@@ -27,8 +32,11 @@
             }
 
             a {
-                text-decoration: underline;
-                color: s.$color-red;
+                color: inherit;
+
+                @include hover {
+                    opacity: 0.7;
+                }
             }
         }
     }

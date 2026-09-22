@@ -13,6 +13,9 @@
 @use "object/component/c-tfccbtn";
 @use "object/component/c-tfccterms";
 
+// Utility
+@use "object/utility/u-tfccdisplay";
+
 // Project
 @use "object/project/p-tfcckv";
 @use "object/project/p-tfccproducts";

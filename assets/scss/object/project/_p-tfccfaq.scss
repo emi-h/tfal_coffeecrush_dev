@@ -1,41 +1,35 @@
 @use '../../foundation/setting' as s;
 @use '../../foundation/mixin' as *;
 
-// よくあるご質問（details/summary アコーディオン・JS不使用）
-// 構造は前回tfal_devの _p-tf70faq.scss を流用。
-// ★数値・色はaiデータから実測して確定すること（現状は仮置き）
+// よくあるご質問（details/summary アコーディオン・JS不使用・全10問）
+// タイトルは黒（賞品・応募方法の赤タイトルと異なる）
+// Qバー背景は実測 #F3EFEE
 
 .tfcc-lp {
     .p-tfccfaq {
-        padding: 40px 0 20px;
+        padding: 40px 0 0;
 
         &__inner {
-            max-width: calc(360 / 414 * 100%);
+            max-width: calc(385.5 / 414 * 100%);
             margin: 0 auto;
 
             @include pc {
-                max-width: 880px;
-                padding: 0 20px;
+                max-width: 845px;
+                padding: 44px 48px;
             }
         }
 
         &__ttl {
             text-align: center;
-            font-size: 17px;
+            font-size: 18px;
             font-weight: 700;
-            letter-spacing: 0.3em;
+            letter-spacing: 0.35em;
+            text-indent: 0.35em;
             margin-bottom: 20px;
 
             @include pc {
                 font-size: 24px;
-            }
-        }
-
-        &__item {
-            background-color: s.$color-white;
-
-            + .p-tfccfaq__item {
-                margin-top: 8px;
+                margin-bottom: 28px;
             }
         }
 
@@ -44,14 +38,15 @@
             align-items: center;
             gap: 10px;
             position: relative;
-            padding: 14px 44px 14px 14px;
+            padding: 13px 44px 13px 14px;
             font-weight: 700;
             font-size: 12px;
-            background-color: #f0f0f0; // ★仮置き（Qバーの背景）
+            background-color: s.$color-faq-bg;
 
             @include pc {
                 font-size: 15px;
-                padding: 15px 52px 15px 18px;
+                padding: 15px 56px 15px 20px;
+                gap: 14px;
             }
 
             // 開閉アイコン（V）
@@ -60,12 +55,16 @@
                 position: absolute;
                 right: 18px;
                 top: 50%;
-                width: 8px;
-                height: 8px;
+                width: 9px;
+                height: 9px;
                 border-right: 2px solid s.$color-text;
                 border-bottom: 2px solid s.$color-text;
                 transform: translateY(-70%) rotate(45deg);
                 transition: transform 0.2s;
+
+                @include pc {
+                    right: 24px;
+                }
             }
         }
 
@@ -79,32 +78,38 @@
             display: flex;
             align-items: flex-start;
             gap: 10px;
-            padding: 14px 18px 16px 14px;
+            padding: 14px 18px 18px 14px;
             font-size: 12px;
+            background-color: s.$color-white;
 
             @include pc {
                 font-size: 14px;
-                padding: 16px 22px 18px 18px;
+                padding: 18px 24px 22px 20px;
+                gap: 14px;
             }
 
             p {
                 flex: 1;
+                min-width: 0;
             }
 
             a {
-                color: s.$color-red;
-                text-decoration: underline;
+                color: inherit;
+
+                @include hover {
+                    opacity: 0.7;
+                }
             }
         }
 
         &__badge {
             flex: 0 0 auto;
             font-weight: 700;
-            font-size: 14px;
-            line-height: 1.3;
+            font-size: 15px;
+            line-height: 1.2;
 
             @include pc {
-                font-size: 17px;
+                font-size: 20px;
             }
 
             &--q {

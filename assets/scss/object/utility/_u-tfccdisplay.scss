@@ -1,0 +1,27 @@
+@use '../../foundation/setting' as s;
+@use '../../foundation/mixin' as *;
+
+// 表示切り替えユーティリティ
+// 「非表示側だけ display: none」にする設計。
+// 表示側は要素本来の display（block / inline / flex 等）がそのまま生きるので、
+// span にも br にも div にもこのクラス1つで使える。
+//
+// 使い方:
+//   <br class="u-tfccsp">          … SPだけ改行
+//   <span class="u-tfccpc">…</span> … PCだけ表示
+
+.tfcc-lp {
+    // SPのみ表示（PCで消す）
+    .u-tfccsp {
+        @include pc {
+            display: none !important;
+        }
+    }
+
+    // PCのみ表示（SPで消す）
+    .u-tfccpc {
+        @include sp {
+            display: none !important;
+        }
+    }
+}
