@@ -17,7 +17,8 @@
             background-color: s.$color-white;
 
             @include pc {
-                max-width: 1080px;
+                width: 1080px;
+max-width: 90%;
                 padding: 44px 48px;
             }
         }

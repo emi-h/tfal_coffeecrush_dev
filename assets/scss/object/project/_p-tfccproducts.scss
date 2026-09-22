@@ -16,7 +16,8 @@
 
             @include pc {
                 width: 100%;
-                max-width: 1080px;
+                width: 1080px;
+max-width: 90%;
             }
 
             @include hover {

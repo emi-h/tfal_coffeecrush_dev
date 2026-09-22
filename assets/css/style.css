@@ -112,7 +112,8 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .c-tfccterms__inner {
-    max-width: 1080px;
+    width: 1080px;
+    max-width: 90%;
     padding: 44px 48px;
   }
 }
@@ -234,7 +235,8 @@
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccproducts__link {
     width: 100%;
-    max-width: 1080px;
+    width: 1080px;
+    max-width: 90%;
   }
 }
 @media (hover: hover) and (pointer: fine) {
@@ -256,7 +258,8 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccprize__inner {
-    max-width: 1080px;
+    width: 1080px;
+    max-width: 90%;
     padding: 44px 48px;
     border-width: 5px;
   }
@@ -428,7 +431,8 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfcchowto__inner {
-    max-width: 1080px;
+    width: 1080px;
+    max-width: 90%;
     padding: 44px 48px;
     border-width: 5px;
   }
@@ -558,7 +562,8 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccreceive__inner {
-    max-width: 1080px;
+    width: 1080px;
+    max-width: 90%;
     padding: 44px 48px;
     border-width: 5px;
   }
@@ -605,7 +610,8 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccfaq__inner {
-    max-width: 1080px;
+    width: 1080px;
+    max-width: 90%;
     padding: 44px 48px;
     background-color: #fff;
   }
