@@ -1,0 +1,64 @@
+@use './setting' as s;
+@use './mixin' as *;
+
+/* ============================================
+   .tfcc-lp：LP全体のラッパー（納品HTMLのルート要素）
+   スタイルはすべてこの配下だけに効かせる。
+   - ホストサイトのCSSを上書きしない（グローバルに書かない）
+   - ホストサイトのクラス（l-inner / c-* / u-* 等）に依存しない
+   - font-family はサイト継承の値を明示指定（$font-family-base参照）
+   ============================================ */
+.tfcc-lp {
+    box-sizing: border-box;
+    font-family: s.$font-family-base;
+    line-height: s.$lineHeight-base;
+    color: s.$color-text;
+    background-color: s.$color-cream;
+
+    /* --- 配下限定ミニリセット --- */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    h2,
+    h3,
+    h4,
+    p,
+    ul,
+    ol,
+    dl,
+    dd,
+    figure {
+        margin: 0;
+    }
+
+    ul,
+    ol {
+        list-style: none;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    img {
+        /* width: 100% にする（max-widthのみだと基準幅超のSP端末で右端がズレる。前回の学び 260817） */
+        width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+
+    /* FAQアコーディオン（details/summary・JS不使用） */
+    summary {
+        cursor: pointer;
+        list-style: none;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+}

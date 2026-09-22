@@ -1,0 +1,46 @@
+@use '../../foundation/setting' as s;
+@use '../../foundation/mixin' as *;
+
+// 応募するボタン（LP内で複数回使用。うち1つはオリエン指示による追加分）
+// リンク先: https://coffeecrush-cbcp.jp/apply
+// ★画像書き出しにするかCSSボタンにするかはデザイン照合時に確定。まずはCSSで仮組み
+
+.tfcc-lp {
+    .c-tfccbtn {
+        display: block;
+        text-align: center;
+        margin: 24px auto;
+
+        &__link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-width: 240px;
+            padding: 14px 32px;
+            border-radius: 999px;
+            background-color: s.$color-red;
+            color: s.$color-white;
+            font-weight: 700;
+            font-size: 16px;
+
+            @include pc {
+                min-width: 300px;
+                font-size: 18px;
+            }
+
+            &::after {
+                content: "";
+                width: 7px;
+                height: 7px;
+                border-top: 2px solid s.$color-white;
+                border-right: 2px solid s.$color-white;
+                transform: rotate(45deg);
+            }
+
+            @include hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

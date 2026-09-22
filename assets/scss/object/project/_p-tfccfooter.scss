@@ -1,0 +1,35 @@
+@use '../../foundation/setting' as s;
+@use '../../foundation/mixin' as *;
+
+// お問合せ（KRUPS キャッシュバックキャンペーン事務局・mailtoリンク）
+
+.tfcc-lp {
+    .p-tfccfooter {
+        padding: 40px 0 60px;
+        text-align: center;
+
+        &__ttl {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            margin-bottom: 12px;
+
+            @include pc {
+                font-size: 18px;
+            }
+        }
+
+        &__text {
+            font-size: 12px;
+
+            @include pc {
+                font-size: 14px;
+            }
+
+            a {
+                text-decoration: underline;
+                color: s.$color-red;
+            }
+        }
+    }
+}

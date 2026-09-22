@@ -1,0 +1,13 @@
+@use '../../foundation/setting' as s;
+@use '../../foundation/mixin' as *;
+
+// KV（メインビジュアル・応募期間帯まで画像想定）
+// ★aiから書き出し後にサイズ確定。KVの書き出しサイズ指定有無は要確認（前回はPC 2400×824指定あり）
+
+.tfcc-lp {
+    .p-tfcckv {
+        img {
+            display: block;
+        }
+    }
+}

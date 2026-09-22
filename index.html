@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【開発用】COFFEE CRUSH キャッシュバックキャンペーンLP</title>
+
+  <!-- ▼制作CSS（納品対象）。本番はホスト側がCSSファイルを配置し<link>で読み込む -->
+  <link rel="stylesheet" href="assets/css/style.css?v=1">
+
+  <!-- ▼開発用のみ：プレビューを見やすくするための指定（グローバルセレクタのため納品CSSには入れない） -->
+  <style>
+    body { margin: 0; }
+  </style>
+</head>
+<body>
+  <div id="js-wrapper">
+    <main class="l-main">
+      <div class="raw-html-embed">
+
+        <!-- ================================================
+             ここから納品HTML（body断片）
+             納品時はこの内側だけを切り出す。
+             ・<html><head><body><link>タグ・JS禁止
+             ・クラスはすべて tfcc- プレフィックス
+             ・テキストは現状オリエンPDF（9.14）からの転記。
+               ★納品前に必ずaiデータの原文と突き合わせること（文言改変厳禁のため）
+             ================================================ -->
+        <div class="tfcc-lp">
+
+          <!-- KV（日本上陸記念 キャッシュバックキャンペーン／応募期間帯まで画像想定） -->
+          <section class="p-tfcckv">
+            <picture>
+              <source srcset="assets/images/kv_pc.jpg" media="(min-width: 769px)">
+              <img src="assets/images/kv_sp.jpg" alt="全自動コーヒーマシン COFFEE CRUSH KRUPS by T-fal 日本上陸記念キャッシュバックキャンペーン 先着1,000名（※予定人数に達し次第終了） 応募期間［応募締切］2027年1月8日（金）23:59まで［対象製品購入期間］2026年11月9日（月）〜2027年1月8日（金）">
+            </picture>
+          </section>
+
+          <!-- 対象製品（2機種とも krups ページへリンク） -->
+          <section class="p-tfccproducts">
+            <div class="p-tfccproducts__inner">
+              <h2 class="p-tfccproducts__ttl">対象製品</h2>
+              <ul class="p-tfccproducts__list">
+                <li class="p-tfccproducts__item">
+                  <a href="https://www.t-fal.co.jp/krups/" target="_blank" rel="noopener">
+                    <img src="assets/images/product_sa4028j0.png" alt="SA4028J0 コーヒークラッシュ COFFEE CRUSH">
+                    <p class="p-tfccproducts__name">SA4028J0<br>コーヒークラッシュ<br>COFFEE CRUSH</p>
+                  </a>
+                </li>
+                <li class="p-tfccproducts__item">
+                  <a href="https://www.t-fal.co.jp/krups/" target="_blank" rel="noopener">
+                    <img src="assets/images/product_sa403bj0.png" alt="SA403BJ0 コーヒークラッシュ エクスペリエンス COFFEE CRUSH EXPERIENCE">
+                    <p class="p-tfccproducts__name">SA403BJ0<br>コーヒークラッシュ エクスペリエンス<br>COFFEE CRUSH EXPERIENCE</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- 応募するボタン（1つ目） -->
+          <p class="c-tfccbtn">
+            <a class="c-tfccbtn__link" href="https://coffeecrush-cbcp.jp/apply" target="_blank" rel="noopener">応募する</a>
+          </p>
+
+          <!-- 賞品（QUOカードPay 3,000円分） -->
+          <section class="p-tfccprize">
+            <div class="p-tfccprize__inner">
+              <h2 class="p-tfccprize__ttl">賞品</h2>
+              <p class="p-tfccprize__lead">デジタルギフトQUOカードPay 3,000円分</p>
+              <figure class="p-tfccprize__img">
+                <img src="assets/images/prize_quopay.png" alt="QUOカードPay クオ・カード ペイ">
+              </figure>
+              <!-- ★QUOカードPay説明文はaiデータ原文から転記する（TODO） -->
+              <div class="p-tfccprize__links">
+                <a class="p-tfccprize__link" href="https://www.quocard.com/individual/store/quopay/" target="_blank" rel="noopener">QUOカードPayの使えるお店はこちら</a>
+                <a class="p-tfccprize__link" href="https://www.quocard.com/individual/use/quopay/" target="_blank" rel="noopener">QUOカードPayの使い方はこちら</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- 応募方法 ★文言はオリエンPDFからの転記。aiデータ原文と要照合 -->
+          <section class="p-tfcchowto">
+            <div class="p-tfcchowto__inner">
+              <h2 class="p-tfcchowto__ttl">応募方法</h2>
+              <p class="p-tfcchowto__lead">
+                応募フォーム（ウェブサイト）にアクセスし、必要事項を記入の上、購入レシートおよび製品に貼られている定格シールの写真をアップロードください。<br>
+                ご入力いただいたメールアドレス宛に、3,000円分のデジタルギフトをお送りします。<br>
+                ●先着順ですので、お早めにご応募ください。応募期間内でも、上限数に達し次第、受付終了となります。<br>
+                ●ご応募は、お一人様1回限りとさせていただきます。<br>
+                ※詳しくは応募規約をご参照ください。
+              </p>
+
+              <div class="p-tfcchowto__step">
+                <p class="p-tfcchowto__step-ttl">1.キャンペーン期間中に対象製品を購入し、レシートを受け取る</p>
+                <p>（オンラインストアで購入の場合は納品書など、下記①〜④の項目がすべて記載されている購入証明書）</p>
+              </div>
+
+              <div class="p-tfcchowto__step">
+                <p class="p-tfcchowto__step-ttl">2.レシートまたは納品書などを真上から水平になるように撮影</p>
+                <p>以下の4項目が写るように撮影してください。<br>
+                <span class="p-tfcchowto__em">①販売店名　②購入日時　③対象製品　④合計金額</span></p>
+                <p class="p-tfcchowto__note">
+                  ※レシートや納品書の原本は、賞品を受け取るまで大切に保管してください。<br>
+                  必要事項が撮影できていない、画像が不鮮明で読み取れないなどがあった場合に再度提出いただく必要がございます。
+                </p>
+              </div>
+
+              <div class="p-tfcchowto__step">
+                <p class="p-tfcchowto__step-ttl">3.製品に貼られている定格シールを撮影</p>
+                <p>
+                  製品の底面に貼られている「定格シール」を枠内全体が映るように撮影。<br>
+                  その際「SA」から始まる番号が視認できる大きさで写るように撮影してください。
+                </p>
+              </div>
+
+              <div class="p-tfcchowto__step">
+                <p class="p-tfcchowto__step-ttl">4.応募画面を開き、必要事項を記入し、レシートと定格シールの画像をアップロード</p>
+                <p class="p-tfcchowto__note">※応募後自動受付メールが配信されます。賞品をお受け取りになるまで大切に保管してください。</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 賞品の受け取り方法 ⚠️メアドはクリック不可・コピペのみ可（aタグにしない） -->
+          <section class="p-tfccreceive">
+            <div class="p-tfccreceive__inner">
+              <h2 class="p-tfccreceive__ttl">賞品の受け取り方法</h2>
+              <p class="p-tfccreceive__text">
+                ご応募時にご登録いただいたメールアドレスに、QUOカードPayの受取り詳細が届きます。<br>
+                QUOカードPayからのメール（delivery@pay-email.quocard.jp）を受信できるよう、設定をお願いいたします。
+              </p>
+              <p class="p-tfccreceive__note">※ご応募後2ヶ月以内を目安にお送りします。</p>
+            </div>
+          </section>
+
+          <!-- 応募するボタン（2つ目・オリエンPDF p.3の赤字指示による追加。デザインデータには無い） -->
+          <p class="c-tfccbtn">
+            <a class="c-tfccbtn__link" href="https://coffeecrush-cbcp.jp/apply" target="_blank" rel="noopener">応募する</a>
+          </p>
+
+          <!-- 応募規約（枠内スクロール想定・要確認） ★全文はaiデータ原文から転記する（TODO） -->
+          <section class="c-tfccterms">
+            <div class="p-tfcchowto__inner">
+              <h2 class="p-tfcchowto__ttl">応募規約</h2>
+              <div class="c-tfccterms__box">
+                <p>●株式会社グループセブ ジャパン（以下「当社」といいます）が主催する＜COFFEE CRUSH 日本上陸記念　キャッシュバックキャンペーン＞（以下「本キャンペーン」といいます）にご応募の方は、以下の本キャンペーンの応募規約（以下「本規約」といいます）をよくお読みいただき、ご同意の上ご応募ください。本キャンペーンにご応募された場合には、本規約にご同意いただいたものとみなします。</p>
+                <p>【TODO】以降の規約全文はaiデータの原文からコピーして流し込む（文言改変厳禁）</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- よくあるご質問（details/summary・初期たたむ・Vで開閉） ★文言はオリエンPDFからの転記。aiデータ原文と要照合 -->
+          <section class="p-tfccfaq">
+            <div class="p-tfccfaq__inner">
+              <h2 class="p-tfccfaq__ttl">よくあるご質問</h2>
+
+              <details class="p-tfccfaq__item">
+                <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>レシートの送り方が分かりません</summary>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>スマートフォンなどのカメラでレシートと購入製品に貼られている定格シールを撮影していただき、その画像データを選択してください。</p></div>
+              </details>
+
+              <details class="p-tfccfaq__item">
+                <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>携帯（ガラケー）から応募したいのですが</summary>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>画像形式はJPG形式、2MB以内のデータで再度ご応募ください。</p></div>
+              </details>
+
+              <details class="p-tfccfaq__item">
+                <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>レシート画像をアップロード（投稿）できないのですが？</summary>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>スマートフォンなどのカメラでレシートと購入製品に貼られている定格シールを撮影していただき、その画像データを選択してください。</p></div>
+              </details>
+
+              <details class="p-tfccfaq__item">
+                <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>レシートが長いです。どのように撮影すればいいですか？</summary>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>レシートを折りたたんで、購入日、店舗名とご購入製品、金額がわかるサイズにして撮影してください。</p></div>
+              </details>
+
+              <details class="p-tfccfaq__item">
+                <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>レシートの有効日付はいつまでですか？</summary>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>2026年11月9日（月）から2027年1月8日（金）までです。</p></div>
+              </details>
+
+              <details class="p-tfccfaq__item">
+                <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>何度も応募できますか？</summary>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>お1人様1回のみの応募とさせていただきます。</p></div>
+              </details>
+
+              <details class="p-tfccfaq__item">
+                <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>ハガキで応募はできますか？</summary>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>申し訳ございません。ハガキでの応募はいただけません。PCまたはスマートフォンからご応募ください。</p></div>
+              </details>
+
+              <details class="p-tfccfaq__item">
+                <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>領収書（購買証明）で応募はできますか？</summary>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>製品名、購入日、購入店が記載されている領収書や購買証明でしたら、ご応募いただけます。<br>製品名が確認できない領収書や購買証明では、ご応募いただいても無効となります。ご了承ください。</p></div>
+              </details>
+
+              <details class="p-tfccfaq__item">
+                <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>WEBで購入したのですが応募できますか？</summary>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>製品名が記載されている購買証明でご応募いただけます。製品名、購入店舗名、購入日がわかるように撮影をお願いします。</p></div>
+              </details>
+
+              <details class="p-tfccfaq__item">
+                <summary class="p-tfccfaq__q"><span class="p-tfccfaq__badge p-tfccfaq__badge--q">Q</span>その他の問い合わせがしたいです。</summary>
+                <div class="p-tfccfaq__a"><span class="p-tfccfaq__badge p-tfccfaq__badge--a">A</span><p>お問い合わせはメールにてお願いいたします。<a href="mailto:coffeecrush-cp@cmp-info.jp">coffeecrush-cp@cmp-info.jp</a><br>※ご返信は3営業日以内にご連絡させていただきます。（土・日・祝日・年末年始12/29～1/4を除く）</p></div>
+              </details>
+            </div>
+          </section>
+
+          <!-- お問合せ（mailtoリンク・オリエン指示） -->
+          <section class="p-tfccfooter">
+            <h2 class="p-tfccfooter__ttl">お問合せ</h2>
+            <p class="p-tfccfooter__text">KRUPS キャッシュバックキャンペーン事務局　<a href="mailto:coffeecrush-cp@cmp-info.jp">coffeecrush-cp@cmp-info.jp</a></p>
+          </section>
+
+        </div>
+        <!-- ================================================
+             納品HTMLここまで
+             ================================================ -->
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

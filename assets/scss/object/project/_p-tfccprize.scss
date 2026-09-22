@@ -1,0 +1,60 @@
+@use '../../foundation/setting' as s;
+@use '../../foundation/mixin' as *;
+
+// 賞品（デジタルギフトQUOカードPay 3,000円分・スマホ画像・使えるお店/使い方ボタン）
+// ★レイアウト数値はaiから実測して確定
+
+.tfcc-lp {
+    .p-tfccprize {
+        padding: 40px 0 0;
+
+        &__inner {
+            max-width: calc(360 / 414 * 100%);
+            margin: 0 auto;
+            padding: 24px 20px;
+            background-color: s.$color-white;
+            border: 2px solid s.$color-brown;
+
+            @include pc {
+                max-width: 880px;
+            }
+        }
+
+        &__ttl {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            margin-bottom: 16px;
+
+            @include pc {
+                font-size: 22px;
+            }
+        }
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 16px;
+            align-items: center;
+        }
+
+        &__link {
+            display: inline-block;
+            padding: 10px 24px;
+            border: 1px solid s.$color-text;
+            border-radius: 999px;
+            font-size: 12px;
+            background-color: #f5f5f5; // ★仮置き
+
+            @include pc {
+                font-size: 14px;
+            }
+
+            @include hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

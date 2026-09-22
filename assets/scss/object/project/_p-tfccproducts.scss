@@ -1,0 +1,69 @@
+@use '../../foundation/setting' as s;
+@use '../../foundation/mixin' as *;
+
+// 対象製品（SA4028J0 / SA403BJ0・2機種とも https://www.t-fal.co.jp/krups/ へリンク）
+// ★レイアウト数値はaiから実測して確定
+
+.tfcc-lp {
+    .p-tfccproducts {
+        padding: 40px 0 0;
+
+        &__inner {
+            max-width: calc(360 / 414 * 100%);
+            margin: 0 auto;
+            padding: 24px 20px;
+            background-color: s.$color-white;
+            border: 2px solid s.$color-brown;
+
+            @include pc {
+                max-width: 880px;
+            }
+        }
+
+        &__ttl {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            margin-bottom: 16px;
+
+            @include pc {
+                font-size: 22px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @include pc {
+                flex-direction: row;
+                justify-content: center;
+                gap: 40px;
+            }
+        }
+
+        &__item {
+            @include pc {
+                flex: 0 1 320px;
+            }
+
+            a {
+                @include hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        &__name {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 8px;
+
+            @include pc {
+                font-size: 14px;
+            }
+        }
+    }
+}

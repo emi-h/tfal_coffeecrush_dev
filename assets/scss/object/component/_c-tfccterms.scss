@@ -1,0 +1,44 @@
+@use '../../foundation/setting' as s;
+@use '../../foundation/mixin' as *;
+
+// 応募規約ボックス（枠内スクロール・スクロールバー表示）
+// 前回同様の実装（overflow-y: scroll + 高さ固定）。
+// ★スクロールボックスにするか全文表示かはデザイン照合時に確定（spec.md 要確認リスト）
+// ★高さ（どの行まで見せるか）もデザイン照合時に確定
+
+.tfcc-lp {
+    .c-tfccterms {
+        &__box {
+            height: 300px; // ★仮置き
+            overflow-y: scroll;
+            padding: 16px;
+            background-color: s.$color-white;
+            border: 1px solid s.$color-brown;
+            font-size: 11px;
+
+            @include pc {
+                height: 360px; // ★仮置き
+                padding: 20px;
+                font-size: 13px;
+            }
+
+            // スクロールバーを常に表示（WebKit系）
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: #eee;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #aaa;
+                border-radius: 4px;
+            }
+        }
+
+        p + p {
+            margin-top: 0.8em;
+        }
+    }
+}

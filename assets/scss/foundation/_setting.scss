@@ -1,0 +1,31 @@
+// ============================================
+// 設定（COFFEE CRUSH キャッシュバックキャンペーンLP）
+//
+// ⚠️ このCSSはT-fal公式サイトのページにそのまま読み込まれる。
+//    html / body / * / :root などのグローバルセレクタは絶対に書かない。
+//    すべてのクラスは tfcc- プレフィックス＋ .tfcc-lp 配下に限定する。
+//    （入稿条件は my-business/clients/tfal/spec.md、今回固有は clients/tfal-coffeecrush/spec.md）
+// ============================================
+
+// Breakpoints（サイト本体の慣習に合わせる：768px以下=SP / 769px以上=PC）
+$pc: 769px;
+$sp-s: 374px;
+
+// デザインデータの基準幅
+$design-pc: 1200px; // LP_PC_1200_fix.ai
+$design-sp: 414px;  // LP_SP_414_fix.ai
+
+// Colors ★仮置き。aiデータからスポイトで実測して確定すること（推測近似のまま納品しない）
+$color-brown: #5a3a22;  // 見出し・枠線（コーヒーブラウン系）
+$color-red: #d7000f;    // 応募ボタン・アクセント
+$color-cream: #f5ecdd;  // 背景（クリーム系）
+$color-white: #fff;
+$color-text: #333;
+
+// Typography
+// font-family はサイト継承の値を「明示指定」で担保する（継承任せ禁止）。
+// 前回案件でiPhoneのみ明朝体になる不具合が発生した学び（260817）。
+// 値は既存T-falサイトの指定と同一（前回・田中様確認済み）
+$font-family-base: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Verdana, sans-serif;
+// rem は使わない（基準になる html の font-size がホストサイト管理のため。px指定が基本）
+$lineHeight-base: 1.5;

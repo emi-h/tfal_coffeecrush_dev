@@ -1,0 +1,46 @@
+@use "sass:math";
+@use './setting' as s;
+
+// *------------------*
+// *  レスポンシブ定義
+// *------------------*
+@mixin pc {
+    @media screen and (min-width: s.$pc) {
+        @content;
+    }
+}
+
+@mixin sp-s {
+    @media screen and (max-width: s.$sp-s) {
+        @content;
+    }
+}
+
+@mixin responsive($value) {
+    @media screen and (min-width: $value) {
+        @content;
+    }
+}
+
+@mixin hover {
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+// *------------------*
+// *  サイズ換算
+// *  rem禁止（htmlのfont-sizeはホストサイト管理）。pxかvw換算を使う
+// *------------------*
+
+// SPデザイン（W414px）基準のvw換算
+@function vwsp($px) {
+    @return math.div($px, 414) * 100vw;
+}
+
+// PCデザイン（W1200px）基準のvw換算（コンテンツ幅可変にする場合のみ）
+@function vwpc($px) {
+    @return math.div($px, 1200) * 100vw;
+}
