@@ -15,9 +15,8 @@
             margin: 0 auto;
 
             @include pc {
-                width: 100%;
                 width: 1080px;
-max-width: 90%;
+                max-width: 90%;
             }
 
             @include hover {

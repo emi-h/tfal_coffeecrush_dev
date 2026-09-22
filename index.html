@@ -20,15 +20,12 @@
 
         <!-- ================================================
              ここから納品HTML（body断片）
-             納品時はこの内側だけを切り出す。
              ・<html><head><body><link>タグ・JS禁止
              ・クラスはすべて tfcc- プレフィックス
-             ・テキストはaiデータ原文（LP_PC_1200_fix.pdf抽出＋高解像度目視）と照合済み（2026-09-22）。
-               残タスク：SP版aiとの差分確認（デザイン照合時にレイアウト差のみ確認すればOK）
              ================================================ -->
         <div class="tfcc-lp">
 
-          <!-- KV（日本上陸記念 キャッシュバックキャンペーン／応募期間帯まで画像想定） -->
+          <!-- KV -->
           <section class="p-tfcckv">
             <picture>
               <source srcset="assets/images/kv_pc.jpg" media="(min-width: 769px)">
@@ -36,7 +33,7 @@
             </picture>
           </section>
 
-          <!-- 対象製品（セクション丸ごと画像・タイトル/枠込み。2機種とも同一URLのため全体を1リンクに） -->
+          <!-- 対象製品 -->
           <section class="p-tfccproducts">
             <a class="p-tfccproducts__link" href="https://www.t-fal.co.jp/krups/" target="_blank">
               <picture>
@@ -46,12 +43,12 @@
             </a>
           </section>
 
-          <!-- 応募するボタン（1つ目） -->
+          <!-- 応募するボタン -->
           <p class="c-tfccbtn">
             <a class="c-tfccbtn__link" href="https://coffeecrush-cbcp.jp/apply" target="_blank">応募する</a>
           </p>
 
-          <!-- 賞品（QUOカードPay 3,000円分） -->
+          <!-- 賞品 -->
           <section class="p-tfccprize">
             <div class="p-tfccprize__inner">
               <h2 class="p-tfccprize__ttl">賞品</h2>
@@ -88,7 +85,7 @@
             </div>
           </section>
 
-          <!-- 応募方法（文言はai原文と照合済み 9/22） -->
+          <!-- 応募方法 -->
           <section class="p-tfcchowto">
             <div class="p-tfcchowto__inner">
               <h2 class="p-tfcchowto__ttl">応募方法</h2>
@@ -146,7 +143,7 @@
             </div>
           </section>
 
-          <!-- 賞品の受け取り方法 ⚠️メアドはクリック不可・コピペのみ可（aタグにしない） -->
+          <!-- 賞品の受け取り方法 -->
           <section class="p-tfccreceive">
             <div class="p-tfccreceive__inner">
               <h2 class="p-tfccreceive__ttl">賞品の受け取り方法</h2>
@@ -158,13 +155,12 @@
             </div>
           </section>
 
-          <!-- 応募するボタン（2つ目・オリエンPDF p.3の赤字指示による追加。デザインデータには無い） -->
+          <!-- 応募するボタン -->
           <p class="c-tfccbtn">
             <a class="c-tfccbtn__link" href="https://coffeecrush-cbcp.jp/apply" target="_blank">応募する</a>
           </p>
 
-          <!-- 応募規約（枠内スクロールかはデザイン照合時に確定）。全文ai原文転記・照合済み 9/22。
-               ⚠️ delivery@pay-email.quocard.jp はここでもリンクにしない（プレーンテキスト） -->
+          <!-- 応募規約 -->
           <section class="c-tfccterms">
             <div class="c-tfccterms__inner">
               <h2 class="c-tfccterms__ttl">応募規約</h2>
@@ -246,7 +242,7 @@
             </div>
           </section>
 
-          <!-- よくあるご質問（details/summary・初期たたむ・Vで開閉・全10問）文言はai原文と照合済み 9/22 -->
+          <!-- よくあるご質問 -->
           <section class="p-tfccfaq">
             <div class="p-tfccfaq__inner">
               <h2 class="p-tfccfaq__ttl">よくあるご質問</h2>
@@ -303,7 +299,7 @@
             </div>
           </section>
 
-          <!-- お問合せ（mailtoリンク・オリエン指示） -->
+          <!-- お問合せ -->
           <section class="p-tfccfooter">
             <h2 class="p-tfccfooter__ttl">お問合せ</h2>
             <p class="p-tfccfooter__text">KRUPS キャッシュバックキャンペーン事務局　<br class="u-tfccsp"><a href="mailto:coffeecrush-cp@cmp-info.jp">coffeecrush-cp@cmp-info.jp</a></p>

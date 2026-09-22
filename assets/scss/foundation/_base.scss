@@ -46,7 +46,7 @@
     }
 
     img {
-        /* width: 100% にする（max-widthのみだと基準幅超のSP端末で右端がズレる。前回の学び 260817） */
+        /* width: 100%（max-widthのみだと基準幅超のSP端末で右端がズレるため） */
         width: 100%;
         height: auto;
         vertical-align: bottom;

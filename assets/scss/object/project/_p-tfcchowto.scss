@@ -2,8 +2,6 @@
 @use '../../foundation/mixin' as *;
 
 // 応募方法（手順1〜4。手順2・3はPCで右側に図版）
-// デザイン上、手順間に罫線はなし（余白のみ）
-// ★数値は照合フェーズで微調整
 
 .tfcc-lp {
     .p-tfcchowto {
@@ -15,11 +13,11 @@
             padding: 28px 20px;
             background-color: s.$color-white;
             border: 3px solid s.$color-brown;
-            border-radius: 20px 0 0 0 ;
+            border-radius: 20px 0 0 0;
 
             @include pc {
                 width: 1080px;
-max-width: 90%;
+                max-width: 90%;
                 padding: 44px 48px;
                 border-width: 5px;
             }
@@ -94,7 +92,7 @@ max-width: 90%;
 
         &__fig {
             margin: 16px auto 0;
-            // 幅＝書き出し実寸÷2（2x書き出し確認済み 9/22）。最終はピクセル照合で微調整
+            // 幅＝画像書き出し実寸÷2
             max-width: 100%;
 
             @include pc {
