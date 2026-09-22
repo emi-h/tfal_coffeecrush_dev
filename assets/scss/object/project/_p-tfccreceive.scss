@@ -15,11 +15,12 @@
             padding: 28px 20px;
             background-color: s.$color-white;
             border: 3px solid s.$color-brown;
-            border-radius: 12px;
+            border-radius: 20px 0 0 0 ;
 
             @include pc {
-                max-width: 845px;
+                max-width: 1080px;
                 padding: 44px 48px;
+                border-width: 5px;
             }
         }
 
@@ -33,7 +34,7 @@
             margin-bottom: 16px;
 
             @include pc {
-                font-size: 24px;
+                font-size: 28px;
                 margin-bottom: 22px;
             }
         }
@@ -42,8 +43,7 @@
             font-size: 12px;
 
             @include pc {
-                font-size: 14px;
-                text-align: center;
+                font-size: 16px;
             }
         }
 
@@ -52,8 +52,7 @@
             margin-top: 10px;
 
             @include pc {
-                font-size: 12px;
-                text-align: center;
+                font-size: 16px;
             }
         }
     }

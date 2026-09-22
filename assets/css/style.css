@@ -112,7 +112,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .c-tfccterms__inner {
-    max-width: 845px;
+    max-width: 1080px;
     padding: 44px 48px;
   }
 }
@@ -129,7 +129,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .c-tfccterms__ttl {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 28px;
   }
 }
@@ -139,7 +139,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .c-tfccterms__box {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 .tfcc-lp .c-tfccterms__item {
@@ -173,7 +173,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .c-tfccterms__subttl {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 .tfcc-lp .c-tfccterms__strong {
@@ -183,7 +183,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .c-tfccterms__strong {
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 .tfcc-lp .c-tfccterms__center-note {
@@ -192,7 +192,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .c-tfccterms__center-note {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .tfcc-lp .c-tfccterms__model {
@@ -234,7 +234,7 @@
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccproducts__link {
     width: 100%;
-    max-width: 845px;
+    max-width: 1080px;
   }
 }
 @media (hover: hover) and (pointer: fine) {
@@ -252,12 +252,13 @@
   padding: 28px 20px;
   background-color: #fff;
   border: 3px solid #5f3c13;
-  border-radius: 12px 0 12px 12px;
+  border-radius: 20px 0 0 0;
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccprize__inner {
-    max-width: 845px;
+    max-width: 1080px;
     padding: 44px 48px;
+    border-width: 5px;
   }
 }
 .tfcc-lp .p-tfccprize__ttl {
@@ -271,7 +272,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccprize__ttl {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 .tfcc-lp .p-tfccprize__lead {
@@ -423,12 +424,13 @@
   padding: 28px 20px;
   background-color: #fff;
   border: 3px solid #5f3c13;
-  border-radius: 12px 0 12px 12px;
+  border-radius: 20px 0 0 0;
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfcchowto__inner {
-    max-width: 845px;
+    max-width: 1080px;
     padding: 44px 48px;
+    border-width: 5px;
   }
 }
 .tfcc-lp .p-tfcchowto__ttl {
@@ -442,16 +444,19 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfcchowto__ttl {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 24px;
   }
 }
 .tfcc-lp .p-tfcchowto__lead {
   font-size: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #5f3c13;
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfcchowto__lead {
     font-size: 14px;
+    padding-bottom: 18px;
   }
 }
 .tfcc-lp .p-tfcchowto__step {
@@ -462,6 +467,11 @@
   .tfcc-lp .p-tfcchowto__step {
     font-size: 14px;
     margin-top: 32px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .tfcc-lp .p-tfcchowto__step p {
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 769px) {
@@ -490,7 +500,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfcchowto__step-ttl {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .tfcc-lp .p-tfcchowto__fig {
@@ -527,7 +537,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfcchowto__note {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 .tfcc-lp .p-tfcchowto__em {
@@ -544,12 +554,13 @@
   padding: 28px 20px;
   background-color: #fff;
   border: 3px solid #5f3c13;
-  border-radius: 12px;
+  border-radius: 20px 0 0 0;
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccreceive__inner {
-    max-width: 845px;
+    max-width: 1080px;
     padding: 44px 48px;
+    border-width: 5px;
   }
 }
 .tfcc-lp .p-tfccreceive__ttl {
@@ -563,7 +574,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccreceive__ttl {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 22px;
   }
 }
@@ -572,8 +583,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccreceive__text {
-    font-size: 14px;
-    text-align: center;
+    font-size: 16px;
   }
 }
 .tfcc-lp .p-tfccreceive__note {
@@ -582,8 +592,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccreceive__note {
-    font-size: 12px;
-    text-align: center;
+    font-size: 16px;
   }
 }
 
@@ -596,8 +605,9 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccfaq__inner {
-    max-width: 845px;
+    max-width: 1080px;
     padding: 44px 48px;
+    background-color: #fff;
   }
 }
 .tfcc-lp .p-tfccfaq__ttl {
@@ -610,7 +620,7 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccfaq__ttl {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 28px;
   }
 }
@@ -654,6 +664,11 @@
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccfaq__q::after {
     right: 24px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .tfcc-lp .p-tfccfaq__item:not(:last-child) {
+    margin-bottom: 14px;
   }
 }
 .tfcc-lp .p-tfccfaq__item[open] .p-tfccfaq__q::after {
@@ -728,8 +743,10 @@
 }
 @media screen and (min-width: 769px) {
   .tfcc-lp .p-tfccfooter__ttl {
+    max-width: 800px;
+    margin: 0 auto 16px;
+    padding-bottom: 14px;
     font-size: 20px;
-    padding: 0 120px 14px;
   }
 }
 .tfcc-lp .p-tfccfooter__text {
